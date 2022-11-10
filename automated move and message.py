@@ -16,19 +16,17 @@ def message():
     t=int(input("enter the times in number :- "))
     msg=input("enter the message : -")
     time.sleep(10)
-    for i in range(0,t):
-        for i in msg:
-            pyautogui.press(i)
+    for _ in range(0,t):
+        pyautogui.write(msg)
         pyautogui.press('enter')
 
 def difstring(*args):
     t=int(input("enter the times in number :- "))
-    time.sleep(10)
+    time.sleep(4)
     for _ in range(0,t):
         for j in args:
             for i in random.choice(j):
-                for k in i:
-                    pyautogui.press(k)
+                pyautogui.write(i)
             pyautogui.press('enter')
 
 
